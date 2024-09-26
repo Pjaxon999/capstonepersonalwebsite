@@ -1,0 +1,116 @@
+body {    
+    text-align: center;
+    padding: 6vw;
+    background: linear-gradient(300deg, #FFF9D0, #CAF4FF, #5AB2FF);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline-flex;
+  }
+  
+  li a {
+    display: block;
+    color: #5AB2FF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .active {
+    color: #CAF4FF
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+    padding: 10px;;
+  }
+
+  .container-middle {
+    margin:100px;
+  }
+
+  .container-projects {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  @media(max-width:1200px){
+    .container-projects {
+      display:flex;
+      flex-flow: column wrap;
+    }
+  }
+
+  .container-projects img {
+    border: 10px solid #fff;
+    margin: 5px;
+  }
+
+  h1 {
+    font-family: "Mukta", sans-serif;
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-family: "Noto Serif", serif;
+  }
+
+  h3 {
+    font-family: "Mukta", sans-serif;
+  }
+
+  p {
+    font-family: "Noto Serif", serif;
+  }
+
+  hr {
+    border: dotted 5px;
+    border-bottom: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #5AB2FF;
+    font-weight: bold;
+    font-family: "Mukta", sans-serif;
+  }
+
+  a:hover {
+    background-color: #FFF9D0;
+  }
+
+  #imgpeter4 {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  }
